@@ -11,23 +11,10 @@ const ingredients = [
   'Приправы',
 ];
 
-// const createIngredient = ingredient => {
-//   const itemRef = document.createElement('li');
-//   itemRef.textContent = ingredient;
-//   itemRef.classList.add('ingredients__item')
-// }
-// ingredients.forEach(ingredient => {
-//   console.log(createIngredient(ingredient))
-// })
+const listRef = document.querySelector('#ingredients');
 
-const ingredientsRef = document.querySelector('#ingredients');
-console.log(ingredientsRef);
-
-const igredList = ingredients.map(ingredient => {
-  const createList = document.createElement('li');
-  createList.classList.add('product');
-  createList.textContent = ingredient;
-
-  return createList;
+const createList = ingredients.forEach(ingredient => {
+  const itemRef = document.createElement('li');
+  itemRef.textContent = ingredient;
+  listRef.appendChild(itemRef);
 });
-ingredientsRef.append(...igredList);
