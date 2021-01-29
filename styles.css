@@ -11,6 +11,13 @@
   list-style: none;
 }
 .gallery-item img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
+}
+#counter {
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
 }
