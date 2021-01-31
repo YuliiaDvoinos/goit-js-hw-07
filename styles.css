@@ -23,6 +23,7 @@
 }
 #validation-input {
   border: 3px solid #bdbdbd;
+  display: block;
 }
 
 #validation-input.valid {
